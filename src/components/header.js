@@ -14,6 +14,10 @@ const Header = ({ siteTitle }) => (
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between"
+        
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -27,6 +31,17 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <h2>
+      <Link
+          to="/contact"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+          Contact
+        </Link>
+      </h2>
     </div>
   </header>
 )
